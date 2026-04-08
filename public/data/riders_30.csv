@@ -1,0 +1,31 @@
+riderId,name,vehicle,status
+1,delhivery,bike,available
+2,xpressbees,ev van,available
+3,shadowfax,truck,available
+4,dhl,ev van,available
+5,dhl,van,available
+6,amazon logistics,ev bike,available
+7,delhivery,scooter,available
+8,xpressbees,van,available
+9,blue dart,van,available
+10,delhivery,truck,available
+11,fedex,scooter,available
+12,ecom express,truck,available
+13,xpressbees,ev van,available
+14,xpressbees,bike,available
+15,xpressbees,ev bike,available
+16,amazon logistics,ev van,available
+17,fedex,bike,available
+18,blue dart,ev bike,available
+19,amazon logistics,van,available
+20,fedex,truck,available
+21,fedex,scooter,available
+22,dhl,scooter,available
+23,blue dart,scooter,available
+24,ecom express,bike,available
+25,amazon logistics,van,available
+26,shadowfax,ev van,available
+27,dhl,ev bike,available
+28,amazon logistics,scooter,available
+29,fedex,truck,available
+30,dhl,bike,available

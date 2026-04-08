@@ -1,0 +1,34 @@
+{
+  "vendors": [
+    {
+      "name": "Test Vendor",
+      "phone": "1234567890",
+      "shopName": "Test Shop",
+      "shopAddress": "Test Address",
+      "panNumber": "ABCDE1234F",
+      "bankingDetails": "test@upi",
+      "id": "DxYuRgPtLls"
+    },
+    {
+      "name": "ABC",
+      "phone": "+91767987867",
+      "shopName": "Chaat center",
+      "shopAddress": "6abjasghjsdgk",
+      "panNumber": "564144222aa",
+      "bankingDetails": "akhgsjdhjv@gmail.com",
+      "id": "T3Rt_YSbYRc"
+    },
+    {
+      "name": "akjska",
+      "phone": "a154545",
+      "shopName": "axbhxjbajsa",
+      "shopAddress": "asbajsj",
+      "panNumber": "asjnansj",
+      "bankingDetails": "abajsjnasjans",
+      "id": "TtM-krrJwsM"
+    }
+  ],
+  "partners": [],
+  "customers": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
