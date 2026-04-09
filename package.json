@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "json-server db.json --port ${PORT:-3001}",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "json-server db.json -p ${PORT:-3001} -h 0.0.0.0"
   },
   "dependencies": {
     "i18next": "^26.0.4",
