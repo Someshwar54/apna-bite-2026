@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const RegisterCustomer = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({ name: '', phone: '', address: '' });
+  const [formData, setFormData] = useState({ name: '', phone: '', password: '', address: '' });
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -34,6 +34,7 @@ const RegisterCustomer = () => {
         <form onSubmit={handleSubmit} className="flex-col gap-3">
           <div className="form-group"><label>{t('rg_name')}</label><input required type="text" name="name" className="input-field" onChange={handleChange} /></div>
           <div className="form-group"><label>{t('rg_phone')}</label><input required type="tel" name="phone" className="input-field" onChange={handleChange} /></div>
+          <div className="form-group"><label>{t('rg_password')}</label><input required type="password" name="password" className="input-field" onChange={handleChange} /></div>
           <div className="form-group"><label>{t('rg_address')}</label><textarea required name="address" className="input-field" onChange={handleChange} style={{ resize: 'vertical' }}></textarea></div>
           <button type="submit" className="btn btn-primary" style={{ background: 'var(--secondary)', width: '100%', marginTop: '1rem', padding: '1rem' }}>
              {t('rg_enter')} <ArrowRight size={18} />

@@ -7,7 +7,7 @@ const RegisterVendor = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
-    name: '', phone: '', shopName: '', shopAddress: '', panNumber: '', bankingDetails: ''
+    name: '', phone: '', password: '', shopName: '', shopAddress: '', panNumber: '', bankingDetails: ''
   });
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -42,6 +42,7 @@ const RegisterVendor = () => {
         <form onSubmit={handleSubmit} className="flex-col gap-3">
           <div className="form-group"><label>{t('rg_name')}</label><input required type="text" name="name" className="input-field" onChange={handleChange} /></div>
           <div className="form-group"><label>{t('rg_phone')}</label><input required type="tel" name="phone" className="input-field" onChange={handleChange} /></div>
+          <div className="form-group"><label>{t('rg_password')}</label><input required type="password" name="password" className="input-field" onChange={handleChange} /></div>
           <div className="form-group"><label>{t('rg_shop_name')}</label><input required type="text" name="shopName" className="input-field" onChange={handleChange} /></div>
           <div className="form-group"><label>{t('rg_shop_address')}</label><input required type="text" name="shopAddress" className="input-field" onChange={handleChange} /></div>
           <div className="form-group"><label>{t('rg_pan')}</label><input required type="text" name="panNumber" className="input-field" onChange={handleChange} /></div>

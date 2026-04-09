@@ -1,34 +1,228 @@
 {
   "vendors": [
     {
-      "name": "Test Vendor",
-      "phone": "1234567890",
-      "shopName": "Test Shop",
-      "shopAddress": "Test Address",
+      "name": "Raju Bhai",
+      "phone": "111",
+      "password": "123",
+      "shopName": "Raju Chaat Corner",
+      "shopAddress": "C-Block Market",
       "panNumber": "ABCDE1234F",
-      "bankingDetails": "test@upi",
-      "id": "DxYuRgPtLls"
+      "bankingDetails": "raju@upi",
+      "id": "vendor1"
+    },
+    {
+      "name": "1111",
+      "phone": "111",
+      "password": "111",
+      "shopName": "ajnsnjas",
+      "shopAddress": "asnsjdbhkjad",
+      "panNumber": "sdbsdhjnd",
+      "bankingDetails": "sdhuidhfhioajoidha",
+      "id": "C1PEnYQXdqY"
+    },
+    {
+      "name": "Vendor",
+      "phone": "1234",
+      "password": "1234",
+      "shopName": "Vendor@1",
+      "shopAddress": "Tea stall",
+      "panNumber": "78162839211",
+      "bankingDetails": "vendor@123",
+      "id": "4C-AxYjae9g"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Rahul Kumar",
+      "phone": "222",
+      "password": "123",
+      "licenseProof": "DL-9999",
+      "bankingDetails": "rahul@upi",
+      "id": "partner1"
     },
     {
       "name": "ABC",
-      "phone": "+91767987867",
-      "shopName": "Chaat center",
-      "shopAddress": "6abjasghjsdgk",
-      "panNumber": "564144222aa",
-      "bankingDetails": "akhgsjdhjv@gmail.com",
-      "id": "T3Rt_YSbYRc"
+      "phone": "a154545",
+      "password": "abc",
+      "licenseProof": "auvshdvhbd",
+      "bankingDetails": "kehdkhedbeuhd",
+      "id": "FbBqTAFQn-0"
     },
     {
-      "name": "akjska",
-      "phone": "a154545",
-      "shopName": "axbhxjbajsa",
-      "shopAddress": "asbajsj",
-      "panNumber": "asjnansj",
-      "bankingDetails": "abajsjnasjans",
-      "id": "TtM-krrJwsM"
+      "name": "Test Partner",
+      "phone": "999",
+      "password": "123123",
+      "licenseProof": "DL-12345",
+      "bankingDetails": "222test@upi",
+      "id": "SEBJs8M-Ie0"
+    },
+    {
+      "name": "Delivery",
+      "phone": "65562656454",
+      "password": "222",
+      "licenseProof": "dhsvdhjabkjbkj",
+      "bankingDetails": "sdb sjshbdhksb",
+      "id": "J8JrpcH3JlY"
+    },
+    {
+      "name": "Deliery",
+      "phone": "222",
+      "password": "222",
+      "licenseProof": "sdbsaihdsk",
+      "bankingDetails": "banking@upi",
+      "id": "z5HS0tFqZg8"
+    },
+    {
+      "name": "Delivery",
+      "phone": "567",
+      "password": "567",
+      "licenseProof": "3892398923887",
+      "bankingDetails": "delivery@567",
+      "id": "UgH9bwNRMIA"
     }
   ],
-  "partners": [],
-  "customers": [],
+  "customers": [
+    {
+      "name": "Priya Sharma",
+      "phone": "333",
+      "password": "123",
+      "address": "Floor 3, Tower B",
+      "id": "customer1"
+    },
+    {
+      "name": "333",
+      "phone": "333",
+      "password": "333",
+      "address": "ashdhahd",
+      "id": "8Mihcrxwqaw"
+    },
+    {
+      "name": "333",
+      "phone": "333",
+      "password": "333",
+      "address": "333",
+      "id": "tCmiCA3NPmM"
+    },
+    {
+      "name": "Customer",
+      "phone": "890",
+      "password": "890",
+      "address": "UnloxHub",
+      "id": "cL-N1S9wKU0"
+    }
+  ],
+  "orders": [],
+  "riders": [],
+  "menu": [],
+  "stalls": [
+    {
+      "stallId": 1,
+      "stallName": "Raju Chaat Corner",
+      "category": "Street Food",
+      "avgPrice": 45,
+      "lat": 12.9352,
+      "lng": 77.6245,
+      "rating": 4.8,
+      "menu": [
+        {
+          "id": 101,
+          "item": "Bhel Puri",
+          "price": 40,
+          "status": "Fresh"
+        },
+        {
+          "id": 102,
+          "item": "Pani Puri (6 pcs)",
+          "price": 30,
+          "status": "Hot"
+        },
+        {
+          "id": 103,
+          "item": "Aloo Tikki Chaat",
+          "price": 50,
+          "status": "Last few"
+        }
+      ],
+      "id": "_cj2c2OuF1w"
+    },
+    {
+      "stallId": 2,
+      "stallName": "South Tiffins",
+      "category": "South Indian",
+      "avgPrice": 60,
+      "lat": 12.936,
+      "lng": 77.626,
+      "rating": 4.9,
+      "menu": [
+        {
+          "id": 201,
+          "item": "Masala Dosa",
+          "price": 60,
+          "status": "Hot"
+        },
+        {
+          "id": 202,
+          "item": "Idli Vada Combo",
+          "price": 50,
+          "status": "Fresh"
+        },
+        {
+          "id": 203,
+          "item": "Filter Coffee",
+          "price": 25,
+          "status": "Available"
+        }
+      ],
+      "id": "1-MdSEjJWh0"
+    },
+    {
+      "stallId": 3,
+      "stallName": "BTM Layout Momos",
+      "category": "Fast Food",
+      "avgPrice": 50,
+      "lat": 12.9165,
+      "lng": 77.6101,
+      "rating": 4.5,
+      "menu": [
+        {
+          "id": 301,
+          "item": "Steamed Veg Momos",
+          "price": 50,
+          "status": "Selling Fast"
+        },
+        {
+          "id": 302,
+          "item": "Chicken Fried Momos",
+          "price": 80,
+          "status": "Hot"
+        }
+      ],
+      "id": "O2MP-k3pA64"
+    },
+    {
+      "stallId": 4,
+      "stallName": "Adugodi Market Grills",
+      "category": "BBQ",
+      "avgPrice": 120,
+      "lat": 12.9431,
+      "lng": 77.6044,
+      "rating": 4.7,
+      "menu": [
+        {
+          "id": 401,
+          "item": "Paneer Tikka Roll",
+          "price": 100,
+          "status": "Hot"
+        },
+        {
+          "id": 402,
+          "item": "Smoked Corn on Cob",
+          "price": 40,
+          "status": "Fresh"
+        }
+      ],
+      "id": "V3z_EPSgQ0U"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

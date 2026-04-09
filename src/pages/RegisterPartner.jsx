@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const RegisterPartner = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({ name: '', phone: '', licenseProof: '', bankingDetails: '' });
+  const [formData, setFormData] = useState({ name: '', phone: '', password: '', licenseProof: '', bankingDetails: '' });
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -34,6 +34,7 @@ const RegisterPartner = () => {
         <form onSubmit={handleSubmit} className="flex-col gap-3">
           <div className="form-group"><label>{t('rg_name')}</label><input required type="text" name="name" className="input-field" onChange={handleChange} /></div>
           <div className="form-group"><label>{t('rg_phone')}</label><input required type="tel" name="phone" className="input-field" onChange={handleChange} /></div>
+          <div className="form-group"><label>{t('rg_password')}</label><input required type="password" name="password" className="input-field" onChange={handleChange} /></div>
           <div className="form-group"><label>{t('rg_license')}</label><input required type="text" name="licenseProof" className="input-field" onChange={handleChange} /></div>
           <div className="form-group"><label>{t('rg_bank')}</label><input required type="text" name="bankingDetails" className="input-field" onChange={handleChange} /></div>
           <button type="submit" className="btn btn-primary" style={{ background: 'var(--success)', width: '100%', marginTop: '1rem', padding: '1rem' }}>
