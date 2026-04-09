@@ -5,7 +5,7 @@ import VendorDashboard from '../components/VendorDashboard';
 import CustomerInterface from '../components/CustomerInterface';
 import PartnerDashboard from '../components/PartnerDashboard';
 import LanguageToggle from '../components/LanguageToggle';
-import { getStalls, getMenu, getOrders, getRiders } from '../dataApi';
+import { getStalls, getMenu, getOrders, getRiders, API_URL } from '../dataApi';
 import { useTranslation } from 'react-i18next';
 
 function Dashboard() {
@@ -53,7 +53,7 @@ function Dashboard() {
     setSaveStatus('Saving...');
     try {
       const endpoint = user.role + 's'; // vendors, partners, customers
-      const res = await fetch(`http://localhost:3001/${endpoint}/${user.details.id}`, {
+      const res = await fetch(`${API_URL}/${endpoint}/${user.details.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(editForm)

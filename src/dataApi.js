@@ -2,7 +2,7 @@ import Papa from 'papaparse';
 
 // On Vercel, we will inject the Render API URL as VITE_API_URL.
 // If it's missing, it falls back to the localhost 3001 server.
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
 export const getStalls = async () => {
   try {

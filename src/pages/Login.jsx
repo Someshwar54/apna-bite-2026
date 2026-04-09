@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LogIn, AlertCircle } from 'lucide-react';
 import LanguageToggle from '../components/LanguageToggle';
+import { API_URL } from '../dataApi';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const Login = () => {
 
     try {
       // Check Vendors
-      let res = await fetch(`http://localhost:3001/vendors`);
+      let res = await fetch(`${API_URL}/vendors`);
       let data = await res.json();
       let match = data.find(user => user.phone === phone && user.password === password);
       if (match) {
@@ -27,7 +28,7 @@ const Login = () => {
       }
 
       // Check Partners
-      res = await fetch(`http://localhost:3001/partners`);
+      res = await fetch(`${API_URL}/partners`);
       data = await res.json();
       match = data.find(user => user.phone === phone && user.password === password);
       if (match) {
@@ -37,7 +38,7 @@ const Login = () => {
       }
 
       // Check Customers
-      res = await fetch(`http://localhost:3001/customers`);
+      res = await fetch(`${API_URL}/customers`);
       data = await res.json();
       match = data.find(user => user.phone === phone && user.password === password);
       if (match) {

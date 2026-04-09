@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Bike, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { API_URL } from '../dataApi';
 
 const RegisterPartner = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const RegisterPartner = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:3001/partners', {
+      const res = await fetch(`${API_URL}/partners`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
