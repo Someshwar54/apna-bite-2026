@@ -1,16 +1,143 @@
-# React + Vite
+# 🍔 Apna Bite 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Apna Bite 2026 is a modern full-stack food ordering platform designed primarily for **local food vendors**. It helps small restaurants, home chefs, and nearby food businesses showcase their menu online, connect with customers, and manage orders efficiently through a simple and responsive web application.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🍽️ Discover local food vendors nearby
+* 🏪 Vendor menu listing and food categories
+* 🔍 Search food items easily
+* 🛒 Add / remove items from cart
+* 💳 Secure checkout flow
+* 👤 User authentication system
+* 📦 Order management for customers and vendors
+* 📱 Fully responsive design
+* ⚡ Fast and user-friendly interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+
+* React.js
+* JavaScript
+* CSS / Tailwind CSS
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+
+---
+
+## 📂 Project Structure
+
+```bash id="q7j6lc"
+apna-bite-2026/
+│── client/          # Frontend files
+│── server/          # Backend API
+│── models/          # Database models
+│── routes/          # API routes
+│── controllers/     # Business logic
+│── public/          # Static assets
+│── package.json
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash id="wqurfd"
+git clone https://github.com/Someshwar54/apna-bite-2026.git
+cd apna-bite-2026
+```
+
+### 2️⃣ Install Dependencies
+
+```bash id="az4m0e"
+npm install
+cd client
+npm install
+```
+
+### 3️⃣ Setup Environment Variables
+
+Create a `.env` file in the root folder:
+
+```env id="8ehzjv"
+MONGO_URI=your_mongodb_connection
+PORT=5000
+JWT_SECRET=your_secret_key
+```
+
+### 4️⃣ Run the Project
+
+#### Start Backend
+
+```bash id="y3m0hn"
+npm run server
+```
+
+#### Start Frontend
+
+```bash id="r49nce"
+cd client
+npm start
+```
+
+---
+
+## 🌐 Usage
+
+1. Open the platform in browser
+2. Explore local food vendors and menus
+3. Add favorite dishes to cart
+4. Place orders securely
+5. Vendors receive and manage orders easily
+
+---
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* Full-stack MERN development
+* Building solutions for local businesses
+* REST API integration
+* Authentication and authorization
+* Database management with MongoDB
+* Responsive UI/UX design
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a new branch
+3. Commit changes
+4. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Developed by **praashanths07**
+GitHub: https://github.com/praashanths07
